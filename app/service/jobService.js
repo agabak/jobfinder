@@ -14,6 +14,5 @@
         function getJobs(){         
             return $http.get('/api/jobs');
         }
-    };
-    
+    };   
 }());
