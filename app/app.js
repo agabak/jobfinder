@@ -1,4 +1,4 @@
 (function () {
     'use strict';
-    angular.module('jobfinder', []);
+    angular.module('jobfinder', ['ngResource']);
 }());

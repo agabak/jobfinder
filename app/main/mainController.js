@@ -4,16 +4,13 @@
     angular.module('jobfinder')
            .controller('mainController',mainController);
     
-    mainController.$inject = [];
+    mainController.$inject = ['$resource'];
     
-    function mainController(){
+    function mainController($resource){
         var vm = this;
         
         vm.title =  "Find a Job today !"
-        vm.jobs = [
-            {title:'Sales Person', description:'you will fight dragons'},
-            {title:'Accoutant', description:'you will  use the keybord'}
-        ]
+        vm.jobs = $resource('/api/jobs').query();
     }
     
 }());
