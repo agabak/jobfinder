@@ -9,7 +9,11 @@
     function mainController(){
         var vm = this;
         
-        vm.title =  "Job Finder"
+        vm.title =  "Find a Job today !"
+        vm.jobs = [
+            {title:'Sales Person', description:'you will fight dragons'},
+            {title:'Accoutant', description:'you will  use the keybord'}
+        ]
     }
     
 }());
