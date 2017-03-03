@@ -1,0 +1,27 @@
+{
+  "name": "jobfinder",
+  "version": "1.0.0",
+  "description": "Job finder",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agabak/jobfinder.git"
+  },
+  "author": "Agaba Kabunga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agabak/jobfinder/issues"
+  },
+  "homepage": "https://github.com/agabak/jobfinder#readme",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "express": "^4.15.0"
+  },
+  "devDependencies": {
+    "open": "0.0.5"
+  }
+}
