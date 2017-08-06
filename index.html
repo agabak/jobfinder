@@ -1,30 +1,217 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <base href="/">
-    <title>ng Events</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/toastr/build/toastr.min.css">
-    <link rel="stylesheet" href="node_modules/ng2f-bootstrap/dist/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Madelekas Advocates- Tanzania Law Firm</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.css" />
+        <link type="text/css" rel="stylesheet" href="js/rs-plugin/css/settings.css" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
+        <link type="text/css" rel="stylesheet" href="css/media.css" />
+    </head>
+    <body ng-app="madeleka">
+        <div id="container" class="main">
+            <div id="out">
+                <div id="home_marker"></div>
+                <div id="header">
+                    <div class="inner">
+                        <!-- /end notification bar -->
+                        <div class="top">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="contacts_block">
+                                    	<!-- edit phone number here -->
+                                    <!--    <div class="phone styler_color">CALL US TOLL FREE <span>888-555-1LAW</span></div> -->
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="scrollup"></a>
+                        </div>
+                        <div class="bottom">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="span3">
+                                    	<!-- insert header logo here -->
+                                        <a href="#" id="logo"><img src="img/ma-logo-2.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="span9">
+                                        <div id="top_menu">
+                                            <div class="navbar">
+                                                <div class="container">
+                                                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                                        <span class="menu-btn-name">Menu</span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                    </a>
+                                                    <div class="nav-collapse">
+                                                        <ul class="nav nav-pills">
+                                                        	<!-- edit navigation menu -->
+                                                            <li class="styler_parent_active"><a ui-sref="home" class="styler_hover_bg_color styler_active_bg_color">Home</a></li>
+                                                            <li class="styler_parent_active"><a ui-sref="about" class="styler_hover_bg_color styler_active_bg_color">About Us</a></li>
+                                                            <li class="styler_parent_active"><a ui-sref="practice" class="styler_hover_bg_color styler_active_bg_color">PRACTICE AREAS</a></li>
+                                                            <li class="styler_parent_active"><a ui-sref="contactUs" class="styler_hover_bg_color styler_active_bg_color">CONTACT US</a></li>
+                                                            <!-- /end navigation menu -->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="wrapper">
+					       <!-- begin slider -->
+                    <div class="fullwidthbanner-container" id="main_slider">
+                        <div class="fullwidthbanner">
+                            <ul>
+                                <!-- slide 1 -->
+                                <li class="slide1" data-transition="slotzoom-horizontal" data-slotamount="5"  data-masterspeed="300">
+                                    <!-- slide 1 image -->
+                                    <img alt="" src="img/judge.jpeg" />
+                                    <!-- slide 1 caption 1 parameters -->
+                                    <div class="caption sft" data-x="10" data-y="50" data-speed="2500" data-start="1000" data-easing="easeInBack">
+                                        <!-- slide 1 caption 1 -->
+                                        <p class="cap-1">We make justice easily accessible and affordable for all</p>
+                                    </div>
+                                    <!-- slide 1 caption 2 parameters -->
+                                    <div class="caption sfl" data-x="35" data-y="190" data-speed="2500" data-start="1500" data-easing="easeInBack">
+                                        <!-- slide 1 caption 2 -->
+                                        <p class="cap-2">BECAUSE WE TREAT YOUR BUSINESS AS IF IT WERE OUR OWN</p>
+                                    </div>
+                                </li>
+                                <!-- slide 2 -->
+                                <li class="slide2" data-transition="boxfade" data-slotamount="5"  data-masterspeed="300">
+                                    <!-- slide 2 image -->
+                                    <img alt="" src="img/judge2.jpeg" />
+                                    <!-- slide 2 caption 1 parameters -->
+                                    <div class="caption sft" data-x="10" data-y="50" data-speed="1500" data-start="1500" data-easing="easeInBack">
+                                        <!-- slide 2 caption 1 -->
+                                        <p class="cap-1">Made specifically for small firms or solo practice attorneys.</p>
+                                    </div>
+                                    <!-- slide 2 caption 2 parameters -->
+                                    <div class="caption sfl" data-x="35" data-y="190" data-speed="1500" data-start="2000" data-easing="easeInBack">
+                                        <!-- slide 2 caption 2 -->
+                                        <p class="cap-2">Madelekas packs modern design that includes compartmentalized sections and features specifically for promoting legal services and attorney professional profiles.</p>
+                                    </div>
+                                </li>
+                                <!-- slide 3 -->
+                                <li class="slide3" data-transition="boxfade" data-slotamount="5"  data-masterspeed="300">
+                                    <!-- slide 3 image -->
+                                    <img alt="" src="img/madelekas-logo-dv2.jpeg" />
+                                    <!-- slide 3 caption 1 parameters -->
+                                    <div class="caption sft" data-x="10" data-y="50" data-speed="1500" data-start="1000" data-easing="easeInBack">
+                                        <!-- slide 3 caption 1 -->
+                                        <p class="cap-1">Madelekas packs modern design that includes compartmentalized sections and features specifically for promoting legal services and attorney professional profiles.</p>
+                                    </div>
+                                    <!-- slide 3 caption 2 parameters -->
+                                    <div class="caption sfl" data-x="35" data-y="190" data-speed="1500" data-start="1500" data-easing="easeInBack">
+                                        <!-- slide 3 caption 2 -->
+                                        <p class="cap-2">JUSTICE MAY BE BLIND, BUT YOUR CLIENTS AND COLLEAGUES AREN'T.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            <div class="container">
+              <div ui-view></div>
+            </div>
+            <div id="empty"></div>
+            </div>
+        </div>
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+        <!-- begin footer -->
+        <div id="footer">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="span4">
+                          <!-- begin site-wide disclaimer -->
+                          <div class="text">
+                              <div class="header">CONTACT US :</div>
+                              <!-- type your site-wide disclaimer here -->
+                               <div company-address></div>
+                          </div>
+                          <!-- /end site-wide disclaimer -->
+                        </div>
+                        <div class="span4">
+                            <!-- begin site-wide disclaimer -->
+                            <div class="text">
+                                <div class="header">DISCLAIMER</div>
+                                <!-- type your site-wide disclaimer here -->
+                              <div main-slider></div>
+                            </div>
+                            <!-- /end site-wide disclaimer -->
+                        </div>
+                        <div class="span4">
+                            <!-- begin newsletter form area -->
+                            <div class="text">
+                                <div class="header">NEWSLETTER</div>
+                                <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+                            </div>
+                            <div class="subscribe">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address" />
+                                    <input type="submit" value="GO" class="styler_bg_color" />
+                                </form>
+                            </div>
+                            <!-- /end newsletter form area -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <div class="row">
+                        <!-- edit copyright notice here -->
+                        <div class="copyrights">Copyright © Madelekas Advocates 2017. All Rights Reserved .</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /end footer -->
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+        <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
+        <script type="text/javascript" src="js/library.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+        <script type="text/javascript" src="js/mail_validation.js"></script>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/toastr/build/toastr.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){console.error(err);});
-    </script>
-  </head>
-  
-  <body class="container">
-    <utanzania-app>Loading....</utanzania-app>
-  </body>
+
+        <!--Angular library files-->
+        <script type="text/javascript" src="angular/angular.min.js"></script>
+        <script type="text/javascript" src="angular/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="angular/angular-animate.min.js"></script>
+        <script type="text/javascript" src="angular/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="ui-bootstrap/ui-bootstrap-custom-tpls-2.5.0.min.js"></script>
+
+        <!--App javascript files -->
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="app/home/homeController.js"></script>
+        <script type="text/javascript" src="app/practice/practiceController.js"></script>
+        <script type="text/javascript" src="app/contactUs/contactController.js"></script>
+            <script src="app/about/aboutController.js"></script>
+
+       <!-- service javascript files -->
+       <script type="text/javascript" src=app/service/homeService.js></script>
+       <script type="text/javascript" src="app/service/practiceService.js"></script>
+
+       <!--directive javascript files  -->
+       <script type="text/javascript" src="app/directive/addressDirective.js"></script>
+       <script type="text/javascript" src="app/directive/mainSlider.js"></script>
+
+
+    </body>
 </html>

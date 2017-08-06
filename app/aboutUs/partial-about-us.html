@@ -1,0 +1,61 @@
+<br/>
+<!-- begin attorneys -->
+<div class="col-md-8">
+<div id="attorneys_marker"></div>
+<div class="attorneys">
+<div class="caption styler_color">{{vm.title}}</div>
+<div class="desc">
+  <p ng-repeat ="about in vm.aboutUsList">
+      {{about.description}}
+  </p>
+</div>
+<br/>
+<br/>
+<div class="practiceh styler_color">{{vm.experience.title}}</div>
+  <div class="desc">{{vm.experience.description}}</div>
+  <ul  ng-repeat="ex in vm.experience.experienceList">
+    <li>{{ex.paragraph}}</li>
+  </ul>
+<!-- attorney 1 -->
+<br/>
+<div class="attorneys">
+  <div class="practiceh styler_color">{{vm.subTitle}}</div>
+    <div class="person" ng-repeat="Lawyer in vm.lawyers">
+       <div class="img"><img  ng-src="{{Lawyer.image}}" alt="" /></div>
+       <div class="text">
+          <!-- attorney 1 name -->
+          <div class="name">{{Lawyer.name}}</div>
+          <!-- attorney 1 title -->
+          <div class="state">{{Lawyer.title}}</div>
+          <div class="state">E-mail: {{Lawyer.email}}</div>
+          <ul class="info clearfix">
+             <li><a href="{{Lawyer.link}}" class="linkedin">LinkedIn</a></li>
+          </ul>
+          <!-- attorney 1 summary -->
+      <div class="desc" ng-repeat="desc in  Lawyer.experience">{{desc.description}}</div>
+      <uib-accordion close-others="vm.oneAtATime">
+       <div uib-accordion-group class="info_slides styler_border_color" heading="Career">
+         <div  ng-repeat="career in Lawyer.career">
+             <p>{{career.date}}-{{career.company}}</p>
+             <p>{{career.title}}</p>
+         </div>
+       </div>
+       <div uib-accordion-group class="info_slides" heading="Professional  Qualifications">
+         <div  ng-repeat="prof in Lawyer.professional">
+             <p>{{prof.description}}</p>
+         </div>
+       </div>
+       <div uib-accordion-group class="info_slides" heading="Academic Qualifications">
+         <div  ng-repeat="prof in Lawyer.qualifications">
+             <p>{{prof.degree}} <br/> {{prof.school}} {{prof.date}}
+         </div>
+       </div>
+       <div uib-accordion-group class="info_slides" heading="Membership in Professional  Associations">
+         <div  ng-repeat="member in Lawyer.membership">
+             <p>{{member.description}}</p>
+         </div>
+       </div>
+     </uib-accordion>
+       </div>
+    </div>
+</div>

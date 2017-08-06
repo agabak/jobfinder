@@ -1,0 +1,16 @@
+<br/>
+<!-- begin attorneys -->
+<div class="span12">
+   <div class="practiceh styler_color">AREAS OF PRACTICE</div>
+  <div id="attorneys_marker">
+    <p>
+      At Madelekas Advocates we offer a comprehensive package of corporate and commercial services tailored specifically to our clients needs. While committed to providing exceptional services with unmatched quality for details, speed and accuracy, the firm has grouped the area of practice including but not limited to:
+    </p>
+  </div>
+  <div class="attorneys" ng-repeat="practice in vm.practicesList">
+    <div class="practiceh styler_color">{{practice.title}}</div>
+      <div class="desc">
+        <p>{{practice.description}}</p>
+      </div>
+  </div>
+</div>
