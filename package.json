@@ -1,31 +1,42 @@
 {
-  "name": "jobfinder",
+  "name": "ng2-fundamentals-demo",
   "version": "1.0.0",
-  "description": "Job finder",
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" ",
+    "server": "node node_modules/ng2f-server/server.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/agabak/jobfinder.git"
-  },
-  "author": "Agaba Kabunga",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/agabak/jobfinder/issues"
-  },
-  "homepage": "https://github.com/agabak/jobfinder#readme",
+  "keywords": [],
+  "author": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
+    }
+  ],
   "dependencies": {
-    "bower": "^1.8.0",
-    "chai": "^3.5.0",
-    "express": "^4.15.0",
-    "mongoose": "^4.8.5",
-    "supertest": "^3.0.0"
+    "@angular/common": "4.0.0",
+    "@angular/compiler": "4.0.0",
+    "@angular/core": "4.0.0",
+    "@angular/forms": "4.0.0",
+    "@angular/http": "4.0.0",
+    "@angular/platform-browser": "4.0.0",
+    "@angular/platform-browser-dynamic": "4.0.0",
+    "@angular/router": "4.0.0",
+    "core-js": "2.4.1",
+    "ng2f-bootstrap": "^0.0.4",
+    "ng2f-server": "^0.2.3",
+    "rxjs": "5.0.1",
+    "systemjs": "0.19.40",
+    "toastr": "^2.1.2",
+    "zone.js": "0.8.4"
   },
   "devDependencies": {
-    "open": "0.0.5",
-    "supertest": "^3.0.0"
-  }
+    "concurrently": "3.2.0",
+    "typescript": "2.1.1",
+    "@types/core-js": "0.9.34",
+    "@types/node": "6.0.46"
+  },
+  "repository": {}
 }
