@@ -9,7 +9,7 @@
     function mainController($resource, jobService) {
         var vm = this;
 
-        vm.title = "Find a Job today test my deployement"
+        vm.title = "Find a Job today"
          jobService.getJobs().then(function(response){
               vm.jobs =   response.data
         })
